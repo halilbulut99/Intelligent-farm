@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Breed Search</title>
+</head>
+<body>
+    <h1>Breed Search</h1>
+    <form action="/search" method="post">
+        <input type="text" name="breedName" th:value="${breedName}" placeholder="Enter Breed Name">
+        <button type="submit">Search</button>
+    </form>
+
+    <ul>
+        <li th:each="animal : ${searchResult}" th:text="${animal.name}"></li>
+    </ul>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <ul>
+        <!-- Use Thymeleaf or another template engine to iterate through the search results -->
+        <li th:each="animal : ${searchResult}">
+            <p th:text="${animal.name}"></p>
+            <p th:text="${animal.breed}"></p>
+        </li>
+    </ul>
+</body>
+</html>
+</body>
+</html>
