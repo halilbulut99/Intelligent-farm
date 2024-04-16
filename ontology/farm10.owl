@@ -1,0 +1,3149 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/3/farm"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2023/3/farm">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2023/3/farm"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalDetail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalWithHighTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalWithLowTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntibioticTracker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Awake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Awassi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaloryIntake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chicken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChickenBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChineseGeese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CowBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FmaleAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrenchLop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoatBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GooseBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HorseBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jersey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leghorn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaleAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NameBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rabbit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RabbitBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sheep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SheepBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thoroughbred"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Turkey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TurkeyBreed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypeAnimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteHolland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDaughter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDaughterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBirthData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBloodPressureRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEarStamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIIIness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRingStamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSoundRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperatureRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Billy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ButtHead"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Butter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buttinsky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daisy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doodle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fluffy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frizzle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Henny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hopper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Keyti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kitten"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LittleRed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Miky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Niko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nugget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poppy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ramsey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Snowball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tom"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#shema:image"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AnimalWithHighTemperature"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTemperatureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AnimalWithLowTemperature"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTemperatureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Awake"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasTemperatureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Chicken"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#ChickenBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ChickenBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#Leghorn"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cow"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#CowBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CowBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#Jersey"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Goat"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#GoatBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GoatBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#Boar"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Goose"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#GooseBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GooseBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#ChineseGeese"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hight"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasBloodPressureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">180</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Horse"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#HorseBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HorseBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#Thoroughbred"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Low"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasBloodPressureRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rabbit"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#RabbitBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RabbitBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#FrenchLop"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sheep"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#SheepBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SheepBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#Awassi"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sleeping"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSoundRange"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Turkey"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TypeAnimal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#TurkeyBreed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TurkeyBreed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Breed"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBreed"/>
+                <Class IRI="#WhiteHolland"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#DomainConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalDetail"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalWithHighTemperature"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalWithLowTemperature"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntibioticTracker"/>
+        <Class IRI="#BioSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Awake"/>
+        <Class IRI="#Sound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Awassi"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Awassi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#SheepBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioSensor"/>
+        <Class IRI="#DomainConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodPressure"/>
+        <Class IRI="#BioSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boar"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#GoatBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breed"/>
+        <Class IRI="#AnimalDetail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaloryIntake"/>
+        <Class IRI="#BioSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChickenBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChineseGeese"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChineseGeese"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#GooseBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CowBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FmaleAnimal"/>
+        <Class IRI="#AnimalDetail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrenchLop"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrenchLop"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#RabbitBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goat"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoatBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goose"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GooseBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hight"/>
+        <Class IRI="#BloodPressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HorseBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jersey"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jersey"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#CowBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leghorn"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leghorn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#ChickenBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low"/>
+        <Class IRI="#BloodPressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaleAnimal"/>
+        <Class IRI="#AnimalDetail"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NameBreed"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#DomainConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rabbit"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RabbitBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sheep"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SheepBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleeping"/>
+        <Class IRI="#Sound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sound"/>
+        <Class IRI="#BioSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class IRI="#BioSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thoroughbred"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thoroughbred"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#HorseBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Turkey"/>
+        <Class IRI="#TypeAnimal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TurkeyBreed"/>
+        <Class IRI="#Breed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypeAnimal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteHolland"/>
+        <Class IRI="#NameBreed"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteHolland"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBreed"/>
+            <Class IRI="#TurkeyBreed"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnimalWithHighTemperature"/>
+        <Class IRI="#AnimalWithLowTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Awake"/>
+        <Class IRI="#Sleeping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chicken"/>
+        <Class IRI="#Goose"/>
+        <Class IRI="#Turkey"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cow"/>
+        <Class IRI="#Goat"/>
+        <Class IRI="#Horse"/>
+        <Class IRI="#Rabbit"/>
+        <Class IRI="#Sheep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FmaleAnimal"/>
+        <Class IRI="#MaleAnimal"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boar"/>
+        <NamedIndividual IRI="#Billy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Goat"/>
+        <NamedIndividual IRI="#Billy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Billy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horse"/>
+        <NamedIndividual IRI="#ButtHead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#ButtHead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thoroughbred"/>
+        <NamedIndividual IRI="#ButtHead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boar"/>
+        <NamedIndividual IRI="#Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Goat"/>
+        <NamedIndividual IRI="#Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Butter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horse"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thoroughbred"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chicken"/>
+        <NamedIndividual IRI="#Comet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leghorn"/>
+        <NamedIndividual IRI="#Comet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Comet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Awassi"/>
+        <NamedIndividual IRI="#Daisy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Daisy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sheep"/>
+        <NamedIndividual IRI="#Daisy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chicken"/>
+        <NamedIndividual IRI="#Doodle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Doodle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leghorn"/>
+        <NamedIndividual IRI="#Doodle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cow"/>
+        <NamedIndividual IRI="#Dory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Dory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jersey"/>
+        <NamedIndividual IRI="#Dory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chicken"/>
+        <NamedIndividual IRI="#Dot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Leghorn"/>
+        <NamedIndividual IRI="#Dot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Dot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Fluffy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FrenchLop"/>
+        <NamedIndividual IRI="#Fluffy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rabbit"/>
+        <NamedIndividual IRI="#Fluffy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Frizzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Turkey"/>
+        <NamedIndividual IRI="#Frizzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WhiteHolland"/>
+        <NamedIndividual IRI="#Frizzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Henny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Turkey"/>
+        <NamedIndividual IRI="#Henny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WhiteHolland"/>
+        <NamedIndividual IRI="#Henny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FrenchLop"/>
+        <NamedIndividual IRI="#Hopper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Hopper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rabbit"/>
+        <NamedIndividual IRI="#Hopper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Jon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cow"/>
+        <NamedIndividual IRI="#Keyti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Keyti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jersey"/>
+        <NamedIndividual IRI="#Keyti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boar"/>
+        <NamedIndividual IRI="#Kid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Kid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Goat"/>
+        <NamedIndividual IRI="#Kid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Kitten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FrenchLop"/>
+        <NamedIndividual IRI="#Kitten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rabbit"/>
+        <NamedIndividual IRI="#Kitten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#LittleRed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Turkey"/>
+        <NamedIndividual IRI="#LittleRed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WhiteHolland"/>
+        <NamedIndividual IRI="#LittleRed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Owner"/>
+        <NamedIndividual IRI="#Maria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Maria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Awassi"/>
+        <NamedIndividual IRI="#Miky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Miky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sheep"/>
+        <NamedIndividual IRI="#Miky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cow"/>
+        <NamedIndividual IRI="#Niko"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jersey"/>
+        <NamedIndividual IRI="#Niko"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Niko"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChineseGeese"/>
+        <NamedIndividual IRI="#Nugget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Nugget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Goose"/>
+        <NamedIndividual IRI="#Nugget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChineseGeese"/>
+        <NamedIndividual IRI="#Peep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Goose"/>
+        <NamedIndividual IRI="#Peep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Peep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChineseGeese"/>
+        <NamedIndividual IRI="#Poppy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Poppy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Goose"/>
+        <NamedIndividual IRI="#Poppy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FmaleAnimal"/>
+        <NamedIndividual IRI="#Ramsey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horse"/>
+        <NamedIndividual IRI="#Ramsey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Thoroughbred"/>
+        <NamedIndividual IRI="#Ramsey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Awassi"/>
+        <NamedIndividual IRI="#Snowball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MaleAnimal"/>
+        <NamedIndividual IRI="#Snowball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sheep"/>
+        <NamedIndividual IRI="#Snowball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Owner"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Jon"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Maria"/>
+        <NamedIndividual IRI="#Tom"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Jon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Billy"/>
+        <NamedIndividual IRI="#Butter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <NamedIndividual IRI="#Ramsey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#Butter"/>
+        <NamedIndividual IRI="#Billy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#Butter"/>
+        <NamedIndividual IRI="#Kid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <NamedIndividual IRI="#ButtHead"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Comet"/>
+        <NamedIndividual IRI="#Dot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <NamedIndividual IRI="#Snowball"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <NamedIndividual IRI="#Dot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#Dory"/>
+        <NamedIndividual IRI="#Niko"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#Dory"/>
+        <NamedIndividual IRI="#Keyti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#Dot"/>
+        <NamedIndividual IRI="#Comet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#Dot"/>
+        <NamedIndividual IRI="#Doodle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <NamedIndividual IRI="#Hopper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <NamedIndividual IRI="#Kitten"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <NamedIndividual IRI="#LittleRed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Henny"/>
+        <NamedIndividual IRI="#LittleRed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <NamedIndividual IRI="#Fluffy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Jon"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <NamedIndividual IRI="#Dory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Kid"/>
+        <NamedIndividual IRI="#Butter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <NamedIndividual IRI="#Fluffy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <NamedIndividual IRI="#Frizzle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <NamedIndividual IRI="#Henny"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Maria"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Maria"/>
+        <NamedIndividual IRI="#Jon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Maria"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Miky"/>
+        <NamedIndividual IRI="#Snowball"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <NamedIndividual IRI="#Niko"/>
+        <NamedIndividual IRI="#Dory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <NamedIndividual IRI="#Poppy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <NamedIndividual IRI="#Peep"/>
+        <NamedIndividual IRI="#Poppy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <NamedIndividual IRI="#Peep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <NamedIndividual IRI="#Nugget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSon"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <NamedIndividual IRI="#ButtHead"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <NamedIndividual IRI="#Miky"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <NamedIndividual IRI="#Daisy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#Jon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksWith"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#Maria"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Billy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Billy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Billy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35351</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Billy"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Billy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Billy"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Billy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35373</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#ButtHead"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35353</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Butter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">82</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35371</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Buttinsky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Comet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Comet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Comet"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Comet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35382</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Comet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Comet"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Comet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35361</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Daisy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35381</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Doodle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Dory"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Dory"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Dory"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35403</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Dory"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Dory"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Dory"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Dory"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Dot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Dot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Dot"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Dot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35383</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Dot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Dot"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Dot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35423</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">37</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35392</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Frizzle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Henny"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Henny"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Henny"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Henny"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35391</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Henny"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Henny"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Henny"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35422</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">37</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Hopper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35401</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Keyti"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Kid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Kid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Kid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35352</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Kid"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Kid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Kid"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Kid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35421</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">37</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Kitten"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35393</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#LittleRed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Miky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Miky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Miky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35362</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Miky"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Miky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Miky"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Miky"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Niko"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Niko"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Niko"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35402</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Niko"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Niko"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Niko"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Niko"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35412</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Nugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Peep"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Peep"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Peep"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Peep"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35411</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Peep"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Peep"/>
+        <Literal>All  vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Peep"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRingStamp"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35413</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Poppy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35372</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Ramsey"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthData"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEarStamp"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35363</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIIIness"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <Literal>None</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <Literal>All vaccinations passed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Snowball"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBreed"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFather"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDaughterOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSonOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <ObjectProperty IRI="#isDaughterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFather"/>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSon"/>
+        <ObjectProperty IRI="#isSonOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDaughter"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasFather"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMother"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSon"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreed"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSon"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreed"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDaughter"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSon"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAge"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBirthData"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEarStamp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasIIIness"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRingStamp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBirthData"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBloodPressureRange"/>
+        <Class IRI="#BioSensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEarStamp"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIIIness"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRingStamp"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSoundRange"/>
+        <Class IRI="#BioSensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <Class IRI="#BioSensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWeight"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBirthData"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBloodPressureRange"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEarStamp"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasIIIness"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRingStamp"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSoundRange"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemperatureRange"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVaccinneInfo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg/agrosaveti/ovtsevadstvo/avasi-poroda-ovtse-za-mlyako-2</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Awassi</IRI>
+        <IRI>https://agri.bg/media/2020/06/22/544069/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg/agrosaveti/ovtsevadstvo/avasi-poroda-ovtse-za-mlyako-2</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Awassi</IRI>
+        <Literal>Вълната е остра и груба. Главата и тялото са оцветени на петна. Мъжките са с мощни спираловидни рога. Животните са тлъстоопашати. Млечността при племените животни е в гранииците 400-500 л, а в отделни стада е и по-висока. Овцете от тази порода не могат да се заплождат от други породи поради липса на рефлекс за отхвърляне на опашката. Плодовитостта е 95-100%, но от около 100 овце се получават 65-75 агнета. Живото тегло на овцете майки е 40-50 кг, а на кочовете - 60-70 кг. У нас животни от породата Аваси са внесени през 1977 г. Аклиматизацията им е протекла сполучливо. Слабото им място е предразположението към заболяване от копитен гнилец, поради което помещенията и дворчетата им трябва да се подържат чисти и сухи.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Awassi</IRI>
+        <Literal xml:lang="en">Awassi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://bioslavferm.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Billy</IRI>
+        <IRI>https://bioslavferm.bg/wp-content/uploads/2022/05/123-a7300670-1647448487021.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Billy</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 80кг
+Възраст: 6г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Billy</IRI>
+        <Literal xml:lang="en">Billy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://bioslavferm.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Boar</IRI>
+        <IRI>https://agri.bg/media/2020/10/20/589924/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg/agrosaveti/ovtsevadstvo/poroda-kozi-boer-e-edinstvenata-poroda-kozi-za-meso-2</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Boar</IRI>
+        <Literal>Породата кози Боер (Африкандер е другото име, под която е известна) има впечатляваща външност. Животните са едри, ръстовити, с дълго и много добре замускулено тяло. Живото тегло на възрастните женски животни е 80-100 кг, а на мъжките - 110-135 кг. (достига и до 150 кг.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Boar</IRI>
+        <Literal xml:lang="en">Boar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://fermabg.weebly.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#ButtHead</IRI>
+        <IRI>https://fermabg.weebly.com/uploads/5/7/4/2/57429207/921662627.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ButtHead</IRI>
+        <Literal>Пол: Мъжки
+Възраст: 7г
+Височина при холката -129,0 см.
+Обхват на гърдите 163,0 см
+Обхват на свирката -15,6 см.
+ Тегло - 400 кг
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ButtHead</IRI>
+        <Literal xml:lang="en">ButtHead</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://bioslavferm.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Butter</IRI>
+        <IRI>https://bioslavferm.bg/wp-content/uploads/2022/05/123-a7300670-1647448487021.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Butter</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 82кг
+Възраст: 5г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Butter</IRI>
+        <Literal xml:lang="en">Butter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://fermabg.weebly.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Buttinsky</IRI>
+        <IRI>https://fermabg.weebly.com/uploads/5/7/4/2/57429207/921662627.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Buttinsky</IRI>
+        <Literal>Пол: Мъжки
+Възраст: 8г
+Височина при холката -159,0 см.
+Обхват на гърдите 183,0 см
+Обхват на свирката -19,6 см.
+ Тегло - 700 кг
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Buttinsky</IRI>
+        <Literal xml:lang="en">Buttinsky</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#ChineseGeese</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Anser_cygnoides_dom_Hoeckergans_2.jpg/330px-Anser_cygnoides_dom_Hoeckergans_2.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://pticevadi.com/breed-202.html</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChineseGeese</IRI>
+        <Literal>Китайска гъска 
+Нарича се още Лебедоподобна. Произожда от дивата госка, която е разпространена в Северен Китай, Манджурия и Северен Сибир.
+Спада кьм породите от лекия тип. Има дьлга лебедоподобна шия и
+малка глава с роговиден черно-кафяв израстьк, по-добре развит при мьжките индивиди.
+Общо взето, при Китайската гъска половият диморфизьм не е добре изразен. Цветьт
+- на оперението е светлокафяв, а грдите и коремьт са бели.
+Възрастните женски гски достигат жива маса 4-6 kg, а мьжките-5-7 к. В сравнение с останалите породи Китайската гъска има най-висока носливост - 40-70 яйца.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChineseGeese</IRI>
+        <Literal xml:lang="en">ChineseGeese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Comet</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/b/bb/PICT7467_b.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Comet</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 3кг
+Възраст: 6г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comet</IRI>
+        <Literal xml:lang="en">Comet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Daisy</IRI>
+        <IRI>https://agri.bg/media/2020/06/22/544069/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Daisy</IRI>
+        <Literal>Пол: Женски
+Тегло: 50кг
+Възраст: 2г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Daisy</IRI>
+        <Literal xml:lang="en">Daisy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Doodle</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/b/bb/PICT7467_b.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Doodle</IRI>
+        <Literal>Пол: Женски
+Тегло: 2кг
+Възраст: 6г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Doodle</IRI>
+        <Literal xml:lang="en">Doodle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://agri.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Dory</IRI>
+        <IRI>https://agri.bg/media/2020/05/22/527691/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dory</IRI>
+        <Literal>Пол: Женски
+Тегло: 200кг
+Възраст: 3г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dory</IRI>
+        <Literal xml:lang="en">Dory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Dot</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/b/bb/PICT7467_b.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dot</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 2кг
+Възраст: 5г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dot</IRI>
+        <Literal xml:lang="en">Dot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Fluffy</IRI>
+        <IRI>http://www.zooferma.com/images/frenchlop_1.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fluffy</IRI>
+        <Literal>Пол: Женски
+Тегло: 3кг
+Възраст: 4г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fluffy</IRI>
+        <Literal xml:lang="en">Fluffy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#FrenchLop</IRI>
+        <IRI>http://www.zooferma.com/images/frenchlop_1.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: http://www.zooferma.com/frenchlop.html</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FrenchLop</IRI>
+        <Literal>Отличителни черти на френските кочовати зайци са дългите и клепнали встрани уши и своеобразна форма на главата. Дължината на ушите е средно 38 - 45см, в най-широката част 8-10см.Главата е груба, с широко чело, изпъкнала профилна линия и силно развита долна челюст. Прилича много на главата на коч, откъдето са получили и наименованието си. Имат по-голямо, широко и закръглено тяло. Живата маса на възрастните животни е 5,5 - 6,5кг, а отделни индивиди достигат 9 - 12кг. Месото се отличава с високи вкусови качества.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FrenchLop</IRI>
+        <Literal xml:lang="en">FrenchLop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Frizzle</IRI>
+        <IRI>http://www.zooferma.com/images/hollandwhite_.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Frizzle</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 9кг
+Възраст: 7г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Frizzle</IRI>
+        <Literal xml:lang="en">Frizzle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Henny</IRI>
+        <IRI>http://www.zooferma.com/images/hollandwhite_.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Henny</IRI>
+        <Literal>Пол: Женски
+Тегло: 7кг
+Възраст: 7г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Henny</IRI>
+        <Literal xml:lang="en">Henny</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Hopper</IRI>
+        <IRI>http://www.zooferma.com/images/frenchlop_1.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hopper</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 8кг
+Възраст: 5г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hopper</IRI>
+        <Literal xml:lang="en">Hopper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://agri.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Jersey</IRI>
+        <IRI>https://agri.bg/media/2020/05/22/527691/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg/agrosaveti/govedovadstvo/dzhersey-nay-drebnata-poroda-kravi-za-mlyako-2</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jersey</IRI>
+        <Literal>Джерсей е най-дребната порода за мляко. Височината при холката на възрастните крави Джерсей в Англия е 115-116 см, живото тегло е около 350 кг, а на биците 600-700 кг. В Дания кравите Джерсей са по-едри с около 50 кг, а в САЩ кравите са най-големи - 450 кг.
+
+Кравите Джерсей се отличават с много висока скорозрелост, като първото отелване на юниците е на 23-24 месечна възраст. Живото тегло на телетата при раждането е 15-22 кг. Те са крехки, слаби и с ниски растежни способности. Освен ниския прираст и рандеман, качеството на месото е незадоволително поради жълтия цвят на телесните тлъстини.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Jersey</IRI>
+        <Literal xml:lang="en">Jersey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://agri.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Keyti</IRI>
+        <IRI>https://agri.bg/media/2020/05/22/527691/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Keyti</IRI>
+        <Literal>Пол: Женски
+Тегло: 350кг
+Възраст: 4г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Keyti</IRI>
+        <Literal xml:lang="en">Keyti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://bioslavferm.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Kid</IRI>
+        <IRI>https://bioslavferm.bg/wp-content/uploads/2022/05/123-a7300670-1647448487021.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kid</IRI>
+        <Literal>Пол:Женски
+Тегло: 75кг
+Възраст: 6г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Kid</IRI>
+        <Literal xml:lang="en">Kid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Kitten</IRI>
+        <IRI>http://www.zooferma.com/images/frenchlop_1.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kitten</IRI>
+        <Literal>Пол: Женски
+Тегло: 6кг
+Възраст: 5г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Kitten</IRI>
+        <Literal xml:lang="en">Kitten</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Leghorn</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/b/bb/PICT7467_b.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg/agrosaveti/ptitsevadstvo/byal-leghorn-nay-razprostranenata-poroda-kokoshki-za-proizvodstvoto-na-yaytsa-2</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Leghorn</IRI>
+        <Literal>Кокошките от породата легхорн имат много добра скорозрелост. Ярките пронасят средно на 155-170, а хибридите на 145-160-дневна възраст, като яйцата достигат бързо нормалната си големина.Докато преди средната носливост при тази порода беше 200-220 яйца, сега при някои високопродуктивни линии и хибриди носливостта достигна 270-320 яйца. Някои носачки достигат и максимална (100%) интензивност на снасяне, т.е. за 365 дни - 365 яйца. Средната маса на яйцата е сравнително висока, но в рамките на породата варира от 51 до 65 г. При стоковите хибриди масата на яйцата е над 60 г.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Leghorn</IRI>
+        <Literal xml:lang="en">Leghorn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#LittleRed</IRI>
+        <IRI>http://www.zooferma.com/images/hollandwhite_.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LittleRed</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 5кг
+Възраст: 6г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LittleRed</IRI>
+        <Literal xml:lang="en">LittleRed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Miky</IRI>
+        <IRI>https://agri.bg/media/2020/06/22/544069/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Miky</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 65кг
+Възраст: 2г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Miky</IRI>
+        <Literal xml:lang="en">Miky</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник: https://agri.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Niko</IRI>
+        <IRI>https://agri.bg/media/2020/05/22/527691/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Niko</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 500кг
+Възраст: 4г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Niko</IRI>
+        <Literal xml:lang="en">Niko</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Nugget</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Anser_cygnoides_dom_Hoeckergans_2.jpg/330px-Anser_cygnoides_dom_Hoeckergans_2.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nugget</IRI>
+        <Literal>Пол: Женски
+Тегло: 18кг
+Възраст: 4г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nugget</IRI>
+        <Literal xml:lang="en">Nugget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Peep</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Anser_cygnoides_dom_Hoeckergans_2.jpg/330px-Anser_cygnoides_dom_Hoeckergans_2.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Peep</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 4кг
+Възраст: 20г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Peep</IRI>
+        <Literal xml:lang="en">Peep</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://upload.wikimedia.org</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Poppy</IRI>
+        <IRI>https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Anser_cygnoides_dom_Hoeckergans_2.jpg/330px-Anser_cygnoides_dom_Hoeckergans_2.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Poppy</IRI>
+        <Literal>Пол: Женски
+Тегло: 15кг
+Възраст:3г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Poppy</IRI>
+        <Literal xml:lang="en">Poppy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://fermabg.weebly.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Ramsey</IRI>
+        <IRI>https://fermabg.weebly.com/uploads/5/7/4/2/57429207/921662627.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ramsey</IRI>
+        <Literal>Пол: Мъжки
+Възраст: 8г
+Височина при холката -149,0 см.
+Обхват на гърдите 173,0 см
+Обхват на свирката -17,6 см.
+ Тегло - 500 кг
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ramsey</IRI>
+        <Literal xml:lang="en">Ramsey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://agri.bg</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Snowball</IRI>
+        <IRI>https://agri.bg/media/2020/06/22/544069/780x440.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Snowball</IRI>
+        <Literal>Пол: Мъжки
+Тегло: 40кг
+Възраст: 1г
+Ваксини: Минати вички ваксини.
+Болести: Няма</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Snowball</IRI>
+        <Literal xml:lang="en">Snowball</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:https://fermabg.weebly.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#Thoroughbred</IRI>
+        <IRI>https://fermabg.weebly.com/uploads/5/7/4/2/57429207/921662627.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com/thoroughbred.html</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Thoroughbred</IRI>
+        <Literal>Създаден е в Англия в края на ХVІІв и началото на ХVІІІв. Чрез сложно възпроизводително кръстосване на източни и местни кобили с арабски, турски, берберийски, тюркменски и други източни жребци.
+ Всички сега съществуващи коне от тази порода водят началото си от три забележителни жребци-родоначалници - Дарлей Арабиан, Байерли Тюрк и Годолфин Арабиан, чрез техните преки потомци Еклипс, Херод и Матчем и около 40 кобили.
+За създаването и за по-нататъшното усъвършенствуване на породата голяма роля са изиграли подходящият мек климат, обилното хранене, пашата, системата на тренинг и на изпитвания, правилното и точно водене на племенните книги.
+ Средните телесни измерения на жребците са:височина при холката 164см.,обхват на гърдите 185см. и на свирката 19,5см.,а зa кобилите  съответно 160,на гърдите 180 и 19см на свирката.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thoroughbred</IRI>
+        <Literal xml:lang="en">Thoroughbred</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="#shema:image"/>
+        <IRI>#WhiteHolland</IRI>
+        <IRI>http://www.zooferma.com/images/hollandwhite_.jpg</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Източник:http://www.zooferma.com/hollandwhite.html</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WhiteHolland</IRI>
+        <Literal>Създадена е от европейски селекционери при развъждането на внесени от САЩ пуйки. Наименованието и е дадено от американските птицевъди, които са внесли от Холандия бели пуйки.
+   Пуйките имат добри месодайни качества и много вкусно и нежно месо. Поради тези качества са широко разпространени в много европейски страни. Живата маса на пуяците достига 11 - 13, а на пуйките - 6 - 8кг. Ггодишната носливост е по-висока, отколкото на бронзовата пуйка и достига 80 - 100 яйца. Имат бял цвят.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WhiteHolland</IRI>
+        <Literal xml:lang="en">WhiteHolland</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
